@@ -2,9 +2,14 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>qtquickcontrols2.conf</file>
-        <file>icons/person.png</file>
         <file>ContactItem.qml</file>
         <file>ContactList.qml</file>
         <file>MainToolBar.qml</file>
+        <file>icons/1.png</file>
+        <file>icons/2.png</file>
+        <file>icons/3.png</file>
+        <file>icons/4.png</file>
+        <file>icons/5.png</file>
+        <file>icons/6.png</file>
     </qresource>
 </RCC>
