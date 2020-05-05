@@ -6,10 +6,13 @@
         <file>ContactList.qml</file>
         <file>MainToolBar.qml</file>
         <file>icons/1.png</file>
-        <file>icons/2.png</file>
-        <file>icons/3.png</file>
-        <file>icons/4.png</file>
-        <file>icons/5.png</file>
-        <file>icons/6.png</file>
+        <file>icons/Avatar1.png</file>
+        <file>icons/Avatar2.png</file>
+        <file>icons/Avatar3.png</file>
+        <file>TransitionWindows.qml</file>
+        <file>icons/chats.png</file>
+        <file>icons/contacts.png</file>
+        <file>icons/settings.png</file>
+        <file>icons/AddUser.png</file>
     </qresource>
 </RCC>

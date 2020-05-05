@@ -4,8 +4,6 @@ import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.12
 
 RowLayout {
-
-
     signal newItem(string text)
     TextField {
         id: textField
@@ -14,7 +12,6 @@ RowLayout {
         placeholderText: "Введите имя пользователя"
     }
 
-
     function add()
     {
         newItem(textField.text);
@@ -22,8 +19,16 @@ RowLayout {
 
     }
 
-    Button {
-        text: "Добавить"
+    Button{
+        Layout.preferredHeight: 40
+        Layout.preferredWidth: 40
+        background: Rectangle {
+            Image {
+                anchors.fill: parent
+                source: "icons/AddUser.png"
+            }
+        }
+
         onClicked: {
             add();
         }

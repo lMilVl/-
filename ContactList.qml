@@ -10,6 +10,8 @@ ListView {
     ScrollBar.vertical: ScrollBar{}
     delegate: ContactItem { // Свойство, которое определяет компонент, с помощью которого будет адрессовываться каждый элемент списка
         text: name
+        text2: time
+        icon: avatar
         selected: list.currentIndex === index
         onLeftClick: {
             list.currentIndex = index // Хранит номер текущего элемента
