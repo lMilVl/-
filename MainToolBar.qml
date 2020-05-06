@@ -10,6 +10,7 @@ RowLayout {
         selectByMouse: true // Возможность выделять текст
         Layout.fillWidth: true
         placeholderText: "Введите имя пользователя"
+        focus: true // Позволит вводить текст сразу после запуска программы
     }
 
     function add()
@@ -22,6 +23,7 @@ RowLayout {
     Button{
         Layout.preferredHeight: 40
         Layout.preferredWidth: 40
+        highlighted: true // Включение подсветки кнопки
         background: Rectangle {
             Image {
                 anchors.fill: parent

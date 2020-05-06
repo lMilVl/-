@@ -50,6 +50,7 @@ Rectangle {
                 id: label2
                 Layout.fillWidth: true
                 color: "gray"
+                text: "Онлайн"
                 font.pixelSize: 10
             }
         }

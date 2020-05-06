@@ -46,12 +46,26 @@ Window {
         }
 
         ContactList {
+            id: list
             Layout.fillHeight: 2 * parent.height / 4
             Layout.fillWidth: true
             model: contactsModel
+            onMenu: {
+                contactListMenu.popup();
+            }
         }
         TransitionWindows {
             Layout.fillWidth: true
+        }
+    }
+    Menu {
+        id: contactListMenu
+        modal: true  // Чтобы при открытии меню никуда более нельзя было нажать
+        MenuItem {
+            text: "Удалить"
+            onTriggered: { // Обработчик срабатывания меню
+                contactsModel.remove(list.menuIndex);
+            }
         }
     }
 }

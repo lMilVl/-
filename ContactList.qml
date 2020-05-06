@@ -5,6 +5,9 @@ import QtQuick.Controls 2.13
 
 ListView {
     id: list
+    property int menuIndex: null//Для сохранения номера элемента, на которое было вызваное контекстное меню
+    signal menu()
+
     clip: true // Запрещает любую адрессовку элементов за пределами списка
     boundsBehavior: ListView.StopAtBounds // Отключение подпружинивания элементов
     ScrollBar.vertical: ScrollBar{}
@@ -15,6 +18,10 @@ ListView {
         selected: list.currentIndex === index
         onLeftClick: {
             list.currentIndex = index // Хранит номер текущего элемента
+        }
+        onRightClick: {
+            menuIndex = index;
+            menu();
         }
     }
 }
