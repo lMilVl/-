@@ -14,5 +14,6 @@
         <file>icons/contacts.png</file>
         <file>icons/settings.png</file>
         <file>icons/AddUser.png</file>
+        <file>screenshots/simple_list.png</file>
     </qresource>
 </RCC>
